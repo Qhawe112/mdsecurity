@@ -273,7 +273,7 @@
       <p class="text-gray-600 mt-2">Clients Protected</p>
     </div>
     <div>
-      <h3 class="text-4xl font-bold text-primary count-up" data-target="100">0 &#43;</h3>
+      <h3 class="text-4xl font-bold text-primary count-up" data-target="500&#43;">0;</h3>
       <p class="text-gray-600 mt-2">Trained Guards</p>
     </div>
     <div>
@@ -290,7 +290,7 @@ const options = { threshold: 0.6 };
 function animateCount(el) {
   const target = +el.getAttribute('data-target');
   let count = 0;
-  const step = Math.ceil(target / 500+);
+  const step = Math.ceil(target / 500);
   const interval = setInterval(() => {
     count += step;
     if (count >= target) {
@@ -456,6 +456,7 @@ counters.forEach(counter => {
     </script>
 </body>
 </html>
+
 
 
 
